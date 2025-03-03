@@ -1,8 +1,8 @@
 package crud
 
 import (
-	"crud-api/dto"
 	"github.com/gin-gonic/gin"
+	"github.com/hosea3000/crud/dto"
 	"gorm.io/gorm"
 	"net/http"
 	"strconv"

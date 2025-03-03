@@ -1,4 +1,4 @@
-module crud-api
+module github.com/hosea3000/crud
 
 go 1.23.4
 

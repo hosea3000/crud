@@ -2,7 +2,7 @@ package crud
 
 import (
 	"context"
-	"crud-api/dto"
+	"github.com/hosea3000/crud/dto"
 	"gorm.io/gorm"
 )
 

@@ -1,8 +1,8 @@
 package main
 
 import (
-	crud "crud-api"
 	"github.com/gin-gonic/gin"
+	"github.com/hosea3000/crud"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 	"net/http"

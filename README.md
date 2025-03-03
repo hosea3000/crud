@@ -51,34 +51,105 @@ func main() {
 
 ## Endpoints
 
-### List
-
-```
-GET /api/product
-```
-
 ### Create
 
 ```
 POST /api/product
+BODY:
+{
+    "code": "aaa112",
+    "price": 100
+}
+RESPONSE:
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "ID": 1,
+        "CreatedAt": "2025-03-04T00:10:29.826052+08:00",
+        "UpdatedAt": "2025-03-04T00:10:29.826052+08:00",
+        "DeletedAt": null,
+        "Code": "aaa112",
+        "Price": 100
+    }
+}
 ```
 
 ### Read
 
 ```
 GET /api/product/:id
+response:
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "ID": 1,
+        "CreatedAt": "2025-03-04T00:10:29.826052+08:00",
+        "UpdatedAt": "2025-03-04T00:10:29.826052+08:00",
+        "DeletedAt": null,
+        "Code": "aaa112",
+        "Price": 100
+    }
+}
 ```
 
 ### Update
 
 ```
 PUT /api/product/:id
+BODY:
+{
+    "code": "aaa112",
+    "price": 200
+}
+RESPONSE:
+{
+    "code": 0,
+    "message": "success",
+    "data": {}
+}
+```
+
+### List
+
+```
+GET /api/product
+RESPONSE:
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "list": [
+            {
+                "ID": 1,
+                "CreatedAt": "2025-03-04T00:10:29.826052+08:00",
+                "UpdatedAt": "2025-03-04T00:12:01.923514+08:00",
+                "DeletedAt": null,
+                "Code": "aaa112",
+                "Price": 200
+            }
+        ],
+        "pagination": {
+            "pageNum": 1,
+            "pageSize": 20,
+            "totalPages": 1,
+            "totalCount": 1
+        }
+    }
+}
 ```
 
 ### Delete
 
 ```
 DELETE /api/product/:id
+RESPONSE:
+{
+    "code": 0,
+    "message": "success",
+    "data": {}
+}
 ```
 
 ## License

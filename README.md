@@ -1,5 +1,9 @@
 # crud package
-This is a package for creating CRUD (Create, Read, Update, Delete) restful APIs from a gorm model
+只需要一个 gorm 的 model。自动生成 REST 的 CRUD 接口。快速实现后台的增删改查功能。
+需要你的项目使用的gin+gorm， 并且golang版本 > 1.18 需要支持范型。
+
+
+同时查询接口实现了基于 pocketbase 的查询协议 https://pocketbase.io/docs/api-rules-and-filters/
 
 ## Usage
 
